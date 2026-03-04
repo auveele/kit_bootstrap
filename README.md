@@ -1,49 +1,48 @@
 # Kit Bootstrap
 
-Sistema base de documentacion operativa para proyectos donde colaboran
-personas y LLM en decisiones, ejecucion y trazabilidad.
+Bootstrap your project documentation system for teams where humans and LLMs
+work together on product, technical, and delivery decisions.
 
-Este repositorio te ayuda a construir un `docs/` robusto desde cero,
-con Source of Truth por tema, fases con gates y contexto reutilizable
-para trabajo humano + agentes.
+`kit_bootstrap` gives you a practical structure to create a high-signal `docs/`
+workspace with clear ownership, phase gates, and reusable context for AI-assisted
+execution.
 
-## Que problema resuelve
+## Why this exists
 
-En equipos mixtos (humanos + LLM), suele pasar lo mismo:
+Most projects with AI-assisted workflows hit the same issues:
 
-- decisiones importantes sin rastro claro,
-- documentos duplicados o contradictorios,
-- prompts sin contexto suficiente o demasiado ruido,
-- roadmap y backlog desconectados del estado real.
+- key decisions are made but not traceable,
+- docs drift or duplicate each other,
+- prompts are either missing critical context or overloaded,
+- roadmap and backlog become disconnected from actual progress.
 
-`kit_bootstrap` propone una forma simple y disciplinada de operar
-sin burocracia innecesaria.
+This kit provides an opinionated baseline to prevent that from day one.
 
-## Enfoque
+## Core principles
 
-- `1 tema = 1 Source of Truth (SoT)`.
-- Si ya existe SoT, se resume y se enlaza; no se duplica.
-- Trabajo por fases con gates `PASS/FAIL`.
-- Dudas severidad `A0` bloquean avance de fase.
-- Priorizacion continua: `P0` bloqueante, `P1` critico, `P2` incremental.
-- Cambios estructurales quedan trazados en decision log y release notes.
+- One topic = one Source of Truth (SoT).
+- If a SoT already exists, summarize and link; do not duplicate.
+- Move in phases with explicit `PASS/FAIL` gates.
+- `A0` open questions block phase advancement.
+- Prioritize continuously: `P0` blocking, `P1` critical, `P2` incremental.
+- Track structural changes in decision log and release notes.
 
-## Que incluye
+## What you get
 
-- Prompt maestro de arranque: `INIT.md`.
-- Kit de plantillas en `kit_bootstrap/` para generar `docs/`.
-- Gobierno documental: indice, reglas de referencia, QA editorial,
+- `INIT.md`: master prompt for bootstrapping complete project docs.
+- `kit_bootstrap/`: template library to generate your `docs/` folder.
+- Governance templates: document index, reference rules, editorial QA,
   decision log, release notes.
-- Producto y sistemas: PRD, GDD-lite, core loops, balance,
-  diccionario de datos.
-- Experiencia y contenido: UI/UX, localizacion, content bible,
-  narrativa.
-- Tecnico y delivery: ADD, specs, roadmap por fases, gates,
-  backlog y estado de proyecto.
-- Operativa LLM: info capsules y context packs por rol.
-- Roles ultralight y RACI con playbooks accionables.
+- Product templates: PRD, GDD-lite, core loops.
+- Systems templates: balance sheet, data dictionary, detailed data model.
+- Experience templates: UI/UX, localization, event/content bible, narrative.
+- Technical templates: ADD and domain specs.
+- Delivery templates: phase roadmap, phase gates, backlog, project status,
+  meeting templates.
+- AI collaboration templates: info capsules and LLM context packs by role.
+- Operational role templates: ultralight roles, RACI matrix, role playbooks.
 
-## Estructura del repositorio
+## Repository structure
 
 ```text
 .
@@ -63,12 +62,12 @@ sin burocracia innecesaria.
    `- README.md
 ```
 
-## Quickstart
+## Quick start
 
-1. Completa inputs del proyecto en `INIT.md`.
-2. Copia plantillas de `kit_bootstrap/` a `docs/` en tu proyecto.
-3. Sustituye placeholders `{{...}}` por datos reales.
-4. Genera documentos en orden recomendado:
+1. Fill project inputs in `INIT.md`.
+2. Copy templates from `kit_bootstrap/` into your target project's `docs/`.
+3. Replace all `{{...}}` placeholders with project-specific data.
+4. Build docs in this order:
    - `docs/00_governance/*`
    - `docs/10_product/*`
    - `docs/20_systems/*`
@@ -76,51 +75,46 @@ sin burocracia innecesaria.
    - `docs/40_technical/*`
    - `docs/50_delivery/*`
    - `docs/60_open-questions/*`
-5. Ejecuta validacion final de coherencia y enlaces.
+5. Run final validation:
+   - no critical duplication,
+   - no broken links,
+   - PRD, roadmap, backlog, and gates are coherent,
+   - `A0` questions are resolved or explicitly documented.
 
-Para una version resumida del flujo, revisa `kit_bootstrap/QUICKSTART.md`.
+For a shorter setup checklist, see `kit_bootstrap/QUICKSTART.md`.
 
-## Flujo recomendado para colaboracion Humano + LLM
+## Human + LLM workflow (recommended)
 
-Para cada tarea, prepara un packet minimo con:
+For each task, prepare a compact task packet with:
 
-- objetivo,
-- alcance in/out,
-- SoT implicados,
-- cambios esperados por archivo,
-- criterios de aceptacion,
-- verificacion,
-- riesgo y rollback.
+- objective,
+- in/out scope,
+- involved SoTs,
+- expected file-level changes,
+- acceptance criteria,
+- verification steps,
+- risk and rollback.
 
-Esto reduce prompts ambiguos y mejora la calidad de salida del agente.
+This keeps prompts focused and improves consistency across contributors
+(both human and AI).
 
-## Dominios documentales
+## Template domains
 
-- `00_governance`: normas de operacion, calidad y trazabilidad.
-- `10_product`: vision, alcance y loops de valor.
-- `20_systems`: entidades, balance y modelo de datos.
-- `30_experience`: UX, contenido, narrativa y localizacion.
-- `40_technical`: decisiones arquitectonicas y specs tecnicas.
-- `50_delivery`: roadmap, gates, backlog y estado.
-- `60_open-questions`: dudas abiertas y su resolucion.
-- `90_archive`: historico no vigente.
+- `00_governance`: operating rules, quality checks, and traceability.
+- `10_product`: product vision, value loops, and MVP boundaries.
+- `20_systems`: entities, data model, and balancing rules.
+- `30_experience`: UX, content operations, localization, narrative.
+- `40_technical`: architecture decisions and technical specs.
+- `50_delivery`: roadmap, gates, priorities, and execution status.
+- `60_open-questions`: unresolved decisions and closure tracking.
+- `90_archive`: historical docs that are not active SoT.
 
-## Resultado esperado
+## Intended audience
 
-Al finalizar bootstrap deberias tener:
+- GitHub-native teams documenting decisions in Markdown.
+- Builders shipping with IDE + LLM workflows.
+- Early-stage projects needing structure without heavyweight process.
 
-- documentacion activa sin duplicidades criticas,
-- trazabilidad clara entre decision, cambio e impacto,
-- fases y gates operativos para ejecucion,
-- contexto compacto reutilizable para tareas con LLM,
-- mejor continuidad entre sesiones y entre personas/agentes.
+## License
 
-## Cuando usar este kit
-
-- Equipos pequenos o medianos que quieren orden rapido.
-- Proyectos 0->1 o reinicios con deuda documental.
-- Entornos donde colaboran humanos y LLM en documentacion/decision.
-
-## Licencia
-
-Apache 2.0. Ver `LICENSE`.
+Apache 2.0. See `LICENSE`.
