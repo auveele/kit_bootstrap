@@ -21,26 +21,28 @@ operating system for documentation:
 It is domain-agnostic, but defaults to web/app product work
 (frontend + backend) out of the box.
 
-## Copy-paste quick start
+## Quick start
+
+The minimal flow is intentionally simple:
+
+1. Copy this kit into your project root.
+2. Ask your LLM to read `INIT.md` and proceed.
+
+That is enough to start.
+
+If you need to fetch the kit first, use one of these options.
+
+Clone the repo:
 
 ```bash
-# from your target project root
-mkdir -p docs
-cp -r path/to/kit_bootstrap/kit_bootstrap/* docs/
-
-# then use path/to/kit_bootstrap/INIT.md as your bootstrap prompt
-# and replace all {{...}} placeholders in docs/
+git clone https://github.com/<owner>/kit_bootstrap.git
 ```
 
-PowerShell variant:
+Or download files only (no `.git`, no git metadata) directly into your project root:
 
-```powershell
-# from your target project root
-New-Item -ItemType Directory -Force docs | Out-Null
-Copy-Item -Recurse -Force path\to\kit_bootstrap\kit_bootstrap\* docs\
-
-# then use path\to\kit_bootstrap\INIT.md as your bootstrap prompt
-# and replace all {{...}} placeholders in docs\
+```bash
+curl -L https://github.com/<owner>/kit_bootstrap/archive/refs/heads/main.tar.gz \
+  | tar -xz --strip-components=1
 ```
 
 ## Why this exists
