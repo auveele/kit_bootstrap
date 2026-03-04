@@ -82,6 +82,21 @@ Entregar:
 - riesgos principales,
 - siguientes 3 acciones recomendadas.
 
+## Cierre y limpieza de bootstrap
+
+Al finalizar la generacion documental:
+
+1. Verificar que todos los documentos requeridos existen, estan completos y consistentes.
+2. Confirmar que validaciones finales y checks de calidad pasaron.
+3. Pedir OK expreso del usuario para cerrar el bootstrap.
+4. Solo tras ese OK, eliminar:
+   - `INIT.md`
+   - carpeta `kit_bootstrap/`
+
+Importante:
+- No eliminar archivos de bootstrap sin aprobacion explicita del usuario.
+- Si el usuario no confirma, mantenerlos para iteraciones futuras.
+
 ---
 
 Fin del prompt.

@@ -35,13 +35,13 @@ If you need to fetch the kit first, use one of these options.
 Clone the repo:
 
 ```bash
-git clone https://github.com/<owner>/kit_bootstrap.git
+git clone https://github.com/auveele/kit_bootstrap.git
 ```
 
 Or download files only (no `.git`, no git metadata) directly into your project root:
 
 ```bash
-curl -L https://github.com/<owner>/kit_bootstrap/archive/refs/heads/main.tar.gz \
+curl -L https://github.com/auveele/kit_bootstrap/archive/refs/heads/main.tar.gz \
   | tar -xz --strip-components=1
 ```
 
