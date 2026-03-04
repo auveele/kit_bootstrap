@@ -1,46 +1,87 @@
 # Kit Bootstrap
 
-Bootstrap your project documentation system for teams where humans and LLMs
-work together on product, technical, and delivery decisions.
+[![License: Apache-2.0](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![Docs: Markdown](https://img.shields.io/badge/docs-markdown-informational.svg)](#)
+[![Workflow: Agent-First](https://img.shields.io/badge/workflow-agent--first-0a7ea4.svg)](#agent-first-default)
 
-`kit_bootstrap` gives you a practical structure to create a high-signal `docs/`
-workspace with clear ownership, phase gates, and reusable context for AI-assisted
-execution.
+Documentation bootstrap for software projects executed primarily by an
+autonomous agent, with optional human review.
+
+## 30-second pitch
+
+If your project runs with AI in the loop, this repo gives you a practical
+operating system for documentation:
+
+- one Source of Truth per topic,
+- phase-based execution with `PASS/FAIL` gates,
+- explicit open-question tracking (`A0/A1/A2`),
+- decision and release traceability,
+- reusable context packets for consistent LLM execution.
+
+It is domain-agnostic, but defaults to web/app product work
+(frontend + backend) out of the box.
+
+## Copy-paste quick start
+
+```bash
+# from your target project root
+mkdir -p docs
+cp -r path/to/kit_bootstrap/kit_bootstrap/* docs/
+
+# then use path/to/kit_bootstrap/INIT.md as your bootstrap prompt
+# and replace all {{...}} placeholders in docs/
+```
+
+PowerShell variant:
+
+```powershell
+# from your target project root
+New-Item -ItemType Directory -Force docs | Out-Null
+Copy-Item -Recurse -Force path\to\kit_bootstrap\kit_bootstrap\* docs\
+
+# then use path\to\kit_bootstrap\INIT.md as your bootstrap prompt
+# and replace all {{...}} placeholders in docs\
+```
 
 ## Why this exists
 
-Most projects with AI-assisted workflows hit the same issues:
+Agentic software workflows often fail in predictable ways:
 
-- key decisions are made but not traceable,
-- docs drift or duplicate each other,
-- prompts are either missing critical context or overloaded,
-- roadmap and backlog become disconnected from actual progress.
+- decisions are made but not auditable,
+- docs duplicate each other and drift,
+- prompts are ambiguous or overloaded,
+- roadmap/backlog lose alignment with real execution.
 
-This kit provides an opinionated baseline to prevent that from day one.
+`kit_bootstrap` is an opinionated baseline to avoid that from day one.
+
+## Agent-first default
+
+- One agent plans, phases, executes, validates, and updates docs.
+- Human input is optional and focused on constraints/approval.
+- If no human input is available, the agent continues with explicit
+  assumptions tracked in open questions + decision log.
 
 ## Core principles
 
 - One topic = one Source of Truth (SoT).
-- If a SoT already exists, summarize and link; do not duplicate.
-- Move in phases with explicit `PASS/FAIL` gates.
-- `A0` open questions block phase advancement.
-- Prioritize continuously: `P0` blocking, `P1` critical, `P2` incremental.
-- Track structural changes in decision log and release notes.
+- If a SoT exists, summarize + link; do not duplicate.
+- Work in phases with explicit `PASS/FAIL` gates.
+- `A0` open questions block phase progression.
+- Priority model: `P0` blocking, `P1` critical, `P2` incremental.
+- Structural changes must be tracked in decision log and release notes.
 
 ## What you get
 
-- `INIT.md`: master prompt for bootstrapping complete project docs.
-- `kit_bootstrap/`: template library to generate your `docs/` folder.
+- `INIT.md`: master bootstrap prompt.
+- `kit_bootstrap/`: template library to generate your `docs/`.
 - Governance templates: document index, reference rules, editorial QA,
   decision log, release notes.
-- Product templates: PRD, GDD-lite, core loops.
-- Systems templates: balance sheet, data dictionary, detailed data model.
-- Experience templates: UI/UX, localization, event/content bible, narrative.
-- Technical templates: ADD and domain specs.
-- Delivery templates: phase roadmap, phase gates, backlog, project status,
-  meeting templates.
-- AI collaboration templates: info capsules and LLM context packs by role.
-- Operational role templates: ultralight roles, RACI matrix, role playbooks.
+- Product templates: PRD, lightweight design docs, core loops.
+- Systems templates: data dictionary, detailed model, balance sheet.
+- Experience templates: UI/UX, localization, content operations, narrative.
+- Technical templates: architecture decision docs and technical specs.
+- Delivery templates: roadmap, phase gates, backlog, status, meeting templates.
+- LLM templates: info capsules and role-oriented context packs.
 
 ## Repository structure
 
@@ -62,58 +103,30 @@ This kit provides an opinionated baseline to prevent that from day one.
    `- README.md
 ```
 
-## Quick start
+## Suggested generation order
 
-1. Fill project inputs in `INIT.md`.
-2. Copy templates from `kit_bootstrap/` into your target project's `docs/`.
-3. Replace all `{{...}}` placeholders with project-specific data.
-4. Build docs in this order:
-   - `docs/00_governance/*`
-   - `docs/10_product/*`
-   - `docs/20_systems/*`
-   - `docs/30_experience/*`
-   - `docs/40_technical/*`
-   - `docs/50_delivery/*`
-   - `docs/60_open-questions/*`
-5. Run final validation:
-   - no critical duplication,
-   - no broken links,
-   - PRD, roadmap, backlog, and gates are coherent,
-   - `A0` questions are resolved or explicitly documented.
+1. `docs/00_governance/*`
+2. `docs/10_product/*`
+3. `docs/20_systems/*`
+4. `docs/30_experience/*`
+5. `docs/40_technical/*`
+6. `docs/50_delivery/*`
+7. `docs/60_open-questions/*`
 
-For a shorter setup checklist, see `kit_bootstrap/QUICKSTART.md`.
+Final checks:
 
-## Human + LLM workflow (recommended)
+- no critical duplication,
+- no broken links,
+- PRD/roadmap/backlog/gates coherence,
+- `A0` questions resolved or explicitly documented.
 
-For each task, prepare a compact task packet with:
+See `kit_bootstrap/QUICKSTART.md` for the compact checklist.
 
-- objective,
-- in/out scope,
-- involved SoTs,
-- expected file-level changes,
-- acceptance criteria,
-- verification steps,
-- risk and rollback.
+## Who this is for
 
-This keeps prompts focused and improves consistency across contributors
-(both human and AI).
-
-## Template domains
-
-- `00_governance`: operating rules, quality checks, and traceability.
-- `10_product`: product vision, value loops, and MVP boundaries.
-- `20_systems`: entities, data model, and balancing rules.
-- `30_experience`: UX, content operations, localization, narrative.
-- `40_technical`: architecture decisions and technical specs.
-- `50_delivery`: roadmap, gates, priorities, and execution status.
-- `60_open-questions`: unresolved decisions and closure tracking.
-- `90_archive`: historical docs that are not active SoT.
-
-## Intended audience
-
-- GitHub-native teams documenting decisions in Markdown.
-- Builders shipping with IDE + LLM workflows.
-- Early-stage projects needing structure without heavyweight process.
+- GitHub-native builders working in Markdown.
+- Projects using LLMs to drive planning + execution.
+- Teams or solo operators who want disciplined delivery without heavyweight process.
 
 ## License
 
