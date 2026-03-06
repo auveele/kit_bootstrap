@@ -15,9 +15,33 @@ Current command:
 python tools/bootstrap.py check --root docs
 ```
 
+Scaffold command:
+
+```bash
+python tools/bootstrap.py scaffold --project-name "My Project" --out docs
+```
+
 What it runs:
 - `validate_docs.py` with `--profile project`
 - `validate_coherence.py`
+
+For `scaffold`, it delegates to `scaffold_docs.py`.
+
+### `scaffold_docs.py`
+
+Generator that creates `docs/` from `kit_bootstrap/*.template.md` files.
+
+Features:
+- converts `*.template.md` to `.md`,
+- preserves folder structure,
+- replaces `{{PROJECT_NAME}}`, `{{DOC_VERSION}}`, `{{STATUS}}`,
+- optionally overwrites existing files with `--force`.
+
+Example:
+
+```bash
+python tools/scaffold_docs.py --project-name "My Project" --out docs --status Draft
+```
 
 Use it as the default gate command in local work and CI.
 
@@ -46,6 +70,9 @@ python tools/validate_docs.py --root docs --profile project
 Cross-document consistency validator for delivery flow.
 
 Checks:
+- target repository layout exists at root (`.run_cache`, `backend`, `docs`,
+  `frontend`, `instance`, `scripts`, `tools`, `.gitignore`, `README.md`),
+- backend virtualenv path exists at `backend/.venv`,
 - required files exist,
 - core docs include required frontmatter fields,
 - FR/NFR IDs in `10_product/product-requirements.md` are referenced in

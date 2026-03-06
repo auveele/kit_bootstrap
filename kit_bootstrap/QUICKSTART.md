@@ -1,7 +1,12 @@
 # Quickstart
 
 1. Complete required project inputs in `INIT.md`.
-2. Copy templates from `kit_bootstrap/` to `docs/`.
+2. Generate docs from templates:
+
+```bash
+python tools/bootstrap.py scaffold --project-name "My Project" --out docs
+```
+
 3. Generate core docs first (`document-index`, `prd`, `product-requirements`,
    `domain-model`, `architecture-overview`, `api-contracts`, roadmap/gates/
    backlog/status, open questions, traceability matrix).

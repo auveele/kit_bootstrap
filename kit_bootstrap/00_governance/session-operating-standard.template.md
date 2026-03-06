@@ -11,7 +11,9 @@ continuity.
 
 ## 2. Official structure
 
-- Root: `README.md`, `frontend/`, `backend/`, `docs/`.
+- Root: `.run_cache/`, `backend/`, `docs/`, `frontend/`, `instance/`,
+  `scripts/`, `tools/`, `.gitignore`, `README.md`.
+- Backend virtualenv location: `backend/.venv`.
 - Active documentation only in `docs/`.
 - Historical docs in `docs/90_archive/`.
 
@@ -41,3 +43,5 @@ continuity.
 - [ ] release notes updated
 - [ ] risks/questions refreshed
 - [ ] phase and gate status refreshed
+- [ ] repository layout matches operating standard
+- [ ] backend virtualenv path is `backend/.venv`

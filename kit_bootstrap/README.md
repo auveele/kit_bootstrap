@@ -18,7 +18,12 @@ Fixed stack baseline:
 
 Recommended usage:
 1. Complete `INIT.md` with project inputs.
-2. Generate final docs in `docs/` using these templates.
+2. Generate final docs in `docs/` from templates:
+
+```bash
+python tools/bootstrap.py scaffold --project-name "My Project" --out docs
+```
+
 3. Validate links, SoT ownership, and gate readiness.
 
 Suggested validation command:

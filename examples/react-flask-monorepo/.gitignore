@@ -1,0 +1,14 @@
+# Python
+backend/.venv/*
+!backend/.venv/.gitkeep
+__pycache__/
+
+# Node
+frontend/node_modules/
+
+# Cache
+.run_cache/*
+!.run_cache/.gitkeep
+
+# Local env
+.env

@@ -158,6 +158,12 @@ Unified check command:
 python tools/bootstrap.py check --root docs
 ```
 
+Generate docs from templates:
+
+```bash
+python tools/bootstrap.py scaffold --project-name "My Project" --out docs
+```
+
 Core-first rollout:
 
 - Core docs are mandatory and should be generated first.

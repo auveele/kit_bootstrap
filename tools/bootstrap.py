@@ -21,6 +21,37 @@ def parse_args() -> argparse.Namespace:
         help="Docs root path",
     )
 
+    scaffold = subparsers.add_parser("scaffold", help="Generate docs from templates")
+    scaffold.add_argument("--project-name", required=True, help="Project name")
+    scaffold.add_argument(
+        "--source",
+        type=Path,
+        default=Path("kit_bootstrap"),
+        help="Template source directory",
+    )
+    scaffold.add_argument(
+        "--out",
+        type=Path,
+        default=Path("docs"),
+        help="Output docs directory",
+    )
+    scaffold.add_argument(
+        "--doc-version",
+        default="1.0",
+        help="Document version replacement",
+    )
+    scaffold.add_argument(
+        "--status",
+        default="Draft",
+        choices=["Active", "Draft", "Archived"],
+        help="Replacement for template status fields",
+    )
+    scaffold.add_argument(
+        "--force",
+        action="store_true",
+        help="Overwrite existing generated docs",
+    )
+
     return parser.parse_args()
 
 
@@ -54,6 +85,25 @@ def main() -> int:
 
         print("All bootstrap checks passed")
         return 0
+
+    if args.command == "scaffold":
+        cmd = [
+            sys.executable,
+            "tools/scaffold_docs.py",
+            "--source",
+            str(args.source),
+            "--out",
+            str(args.out),
+            "--project-name",
+            args.project_name,
+            "--doc-version",
+            args.doc_version,
+            "--status",
+            args.status,
+        ]
+        if args.force:
+            cmd.append("--force")
+        return run(cmd)
 
     return 2
 

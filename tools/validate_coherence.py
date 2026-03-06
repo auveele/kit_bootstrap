@@ -30,6 +30,21 @@ FRONTMATTER_REQUIRED_FIELDS = {
     "last_updated",
 }
 
+REQUIRED_ROOT_DIRS = [
+    ".run_cache",
+    "backend",
+    "docs",
+    "frontend",
+    "instance",
+    "scripts",
+    "tools",
+]
+
+REQUIRED_ROOT_FILES = [
+    ".gitignore",
+    "README.md",
+]
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Validate cross-doc coherence")
@@ -134,6 +149,24 @@ def parse_traceability(trace_doc: str) -> list[tuple[str, str, str, str, str]]:
     return rows
 
 
+def validate_repository_layout(docs_root: Path, errors: list[str]) -> None:
+    repo_root = docs_root.parent
+
+    for dir_name in REQUIRED_ROOT_DIRS:
+        dir_path = repo_root / dir_name
+        if not dir_path.exists() or not dir_path.is_dir():
+            errors.append(f"Missing required root directory: {dir_path}")
+
+    for file_name in REQUIRED_ROOT_FILES:
+        file_path = repo_root / file_name
+        if not file_path.exists() or not file_path.is_file():
+            errors.append(f"Missing required root file: {file_path}")
+
+    backend_venv = repo_root / "backend" / ".venv"
+    if not backend_venv.exists() or not backend_venv.is_dir():
+        errors.append(f"Missing required backend virtualenv directory: {backend_venv}")
+
+
 def main() -> int:
     args = parse_args()
     root = args.root.resolve()
@@ -152,6 +185,8 @@ def main() -> int:
     if not root.exists():
         print(f"ERROR: docs root does not exist: {root}")
         return 2
+
+    validate_repository_layout(root, errors)
 
     for p in required.values():
         existing(p, errors)

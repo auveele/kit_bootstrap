@@ -18,6 +18,27 @@ starting from planning and ending in release, using the templates from
 - ORM: SQLAlchemy
 - Bootstrap database: SQLite (`sqlite3`)
 
+## Target repository layout after initial bootstrap (mandatory)
+
+At the end of the initial bootstrap, the project root must include:
+
+```text
+.
+|- .run_cache/
+|- backend/
+|  `- .venv/
+|- docs/
+|- frontend/
+|- instance/
+|- scripts/
+|- tools/
+|- .gitignore
+`- README.md
+```
+
+Additional rule:
+- The backend virtual environment must live at `backend/.venv`.
+
 ## Required inputs (must be closed)
 
 1. Project name.
@@ -89,6 +110,8 @@ Before finishing:
 5. Update Document Index and Release Notes.
 6. Validate architecture and delivery docs are consistent with fixed stack.
 7. Validate FR/NFR traceability matrix is complete for all P0/P1 scope.
+8. Validate the target repository layout exists in root.
+9. Validate backend virtualenv path is `backend/.venv`.
 
 ## Final report format
 
