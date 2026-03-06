@@ -1,26 +1,26 @@
 # Meeting Templates v1
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
 ## 1. Daily (10-15 min)
 
-- Que avance clave hice ayer.
-- Que hare hoy.
-- Bloqueos (owner + ETA desbloqueo).
+- Key progress since last update.
+- Planned work for today.
+- Blockers (owner + ETA to unblock).
 
-## 2. Checkpoint de fase
+## 2. Phase checkpoint
 
-- fase evaluada:
+- evaluated phase:
 - gate PASS/FAIL:
-- evidencias:
-- bloqueos:
-- accion correctiva:
+- evidence:
+- blockers:
+- corrective action:
 
 ## 3. Go/No-Go
 
-- criterios cumplidos:
-- riesgos residuales:
+- criteria met:
+- residual risks:
 - decision:
-- responsables y siguientes pasos:
+- owners and next steps:

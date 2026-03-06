@@ -1,8 +1,8 @@
 # Priority Backlog
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
 ## P0
 1.
@@ -13,20 +13,20 @@ Estado: Vigente
 ## P2
 1.
 
-## Regla diaria
+## Daily rule
 
-- Si hay A0, solo cerrar A0.
-- Si no hay A0, ejecutar P0 primero.
+- If A0 exists, close A0 first.
+- If no A0 exists, execute P0 first.
 
-## Estado por item
+## Item state
 
 - Open
 - In Progress
 - Blocked
 - Done
 
-Campos minimos por item P0:
+Minimum fields for each P0 item:
 - owner
-- aprobador
-- criterio de aceptacion
-- referencia SoT
+- approver
+- acceptance criteria
+- SoT reference

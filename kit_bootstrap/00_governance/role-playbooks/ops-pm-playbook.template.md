@@ -1,25 +1,26 @@
 # Ops PM Playbook
 
-Rol: Ops/PM
+Role: Ops/PM
 
-## Objetivo del rol
+## Role objective
 
-Mantener flujo operativo estable: estado de fase, bloqueos, coordinacion y evidencias de cierre.
+Maintain stable execution flow: phase status, blockers, coordination, and
+closure evidence.
 
-## Leer primero
+## Read first
 
 - `docs/50_delivery/project-status.md`
 - `docs/50_delivery/priority-backlog.md`
 - `docs/60_open-questions/open-questions-log.md`
 
-## Entregables del rol
+## Core deliverables
 
-- reporte de estado
-- seguimiento de bloqueos
-- preparacion de checkpoints de fase
+- status report
+- blocker tracking
+- phase checkpoint preparation
 
-## Validaciones minimas
+## Minimum validations
 
-- [ ] bloqueos con owner
-- [ ] estado por fase actualizado
-- [ ] riesgos A0/A1 trazados
+- [ ] blockers have owner
+- [ ] phase status updated
+- [ ] A0/A1 risks tracked

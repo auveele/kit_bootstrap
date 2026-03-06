@@ -1,24 +1,30 @@
 # Data Dictionary Complete
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: {{STATUS}}
+Status: {{STATUS}}
 
-## 1. Modelo detallado
+## 1. Detailed model
 
-| Tabla | Campo | Tipo | Null | PK/FK | Indice |
+| Table | Field | Type | Null | PK/FK | Index |
 |---|---|---|---|---|---|
 | | | | | | |
 
-## 2. Restricciones
+## 2. Constraints
 
 -
 
-## 3. Migraciones
+## 3. Migrations
 
 -
 
-## 4. Referencias
+## 4. ORM notes (SQLAlchemy)
+
+- model-to-table mapping
+- relationship strategy
+- migration policy
+
+## 5. References
 
 - `docs/20_systems/data-dictionary.md`
-- `docs/40_technical/add.md`
+- `docs/40_technical/backend-architecture-flask.md`

@@ -1,45 +1,44 @@
 # Roles and Rituals v1 (Ultralight)
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Definir roles operativos minimos y rituales ligeros para mejorar coordinacion sin burocracia.
+Define minimal operational roles and lightweight rituals for coordination
+without bureaucracy.
 
-## 2. Roles base
+## 2. Core roles
 
-- Product: alcance, prioridades, KPI, decisiones de valor.
-- Tech: arquitectura, contratos, calidad tecnica, riesgo tecnico.
-- UX/Art: experiencia, flujo, estilo visual, consistencia de interfaz.
-- QA/Doc: calidad documental, no duplicidad, gates editoriales.
-- Ops/PM: estado de fase, dependencias, bloqueos y ritmo operativo.
+- Product: scope, priorities, KPI, value decisions.
+- Tech: architecture, API contracts, technical quality, technical risk.
+- UX: user experience, flow quality, interface consistency.
+- QA/Docs: documentation quality, SoT integrity, editorial gates.
+- Ops/PM: phase status, dependencies, blockers, delivery cadence.
 
-## 3. Regla anti-burocracia
+## 3. Anti-bureaucracy rule
 
-- Si una tarea tarda menos de 30 minutos y no toca SoT, no requiere ritual formal.
-- Si una tarea toca SoT, roadmap, contratos o arquitectura, si requiere owner y aprobador.
+- Tasks under 30 minutes that do not touch SoT do not require formal ritual.
+- Tasks touching SoT, roadmap, API contracts, or architecture require owner and approver.
 
-## 4. Cuando indicar rol (solo momentos clave)
+## 4. When role declaration is required
 
-- al abrir tarea P0/P1,
-- al aprobar gate de fase,
-- al cerrar decision estructural,
-- al cerrar una duda A0/A1.
+- opening P0/P1 tasks,
+- approving a phase gate,
+- closing a structural decision,
+- closing an A0/A1 question.
 
-No es necesario declarar rol en cada conversacion o comentario diario.
+## 5. Minimal rituals
 
-## 5. Rituales minimos
+1. Daily 10-15 min (blockers + next step).
+2. Phase checkpoint (PASS/FAIL) by gates.
+3. Documentation release review for structural changes.
 
-1. Daily de 10-15 min (bloqueos + siguiente paso).
-2. Checkpoint de fase (PASS/FAIL) segun gates.
-3. Revision de release documental en cambios estructurales.
-
-## 6. Evidencia minima por tarea relevante
+## 6. Minimum evidence for relevant tasks
 
 - owner
-- aprobador
-- criterio de aceptacion
-- referencia a SoT
-- resultado de verificacion
+- approver
+- acceptance criteria
+- SoT reference
+- verification result

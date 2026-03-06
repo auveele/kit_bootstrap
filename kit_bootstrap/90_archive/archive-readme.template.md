@@ -1,8 +1,8 @@
 # Archive README
 
-Esta carpeta guarda historico y legado no vigente.
+This folder stores historical and legacy documents that are not active.
 
-Reglas:
-- no usar como SoT activo,
-- no mover a docs activos sin decision explicita,
-- cuando se referencie legado, enlazar tambien al documento vigente equivalente.
+Rules:
+- do not use as active SoT,
+- do not move back to active docs without explicit decision,
+- if referencing legacy docs, also link the current active equivalent.

@@ -1,19 +1,21 @@
 # Narrative README
 
-Carpeta para documentos narrativos de onboarding, comunidad y posicionamiento.
+Folder for product narrative assets: onboarding, community, and product
+positioning.
 
-## Objetivo
+## Objective
 
-Traducir el proyecto a lenguaje no tecnico sin romper coherencia con producto.
+Translate the project into non-technical language while staying consistent
+with product documentation.
 
-## Reglas
+## Rules
 
-- Referenciar PRD/Core Loops cuando aplique.
-- No introducir reglas tecnicas nuevas aqui.
+- Reference PRD/User Flows where needed.
+- Do not introduce new technical rules here.
 
-## Documentos sugeridos
+## Suggested documents
 
-- manifiesto.md
-- guia-nuevos-miembros.md
-- guia-comunidad.md
-- faq-narrativa.md
+- manifesto.md
+- new-user-guide.md
+- community-guide.md
+- narrative-faq.md

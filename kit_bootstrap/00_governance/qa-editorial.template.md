@@ -1,31 +1,32 @@
-# QA Editorial
+# Editorial QA
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Validar claridad, consistencia, completitud y no duplicidad.
+Validate clarity, consistency, completeness, and low duplication.
 
 ## 2. Scorecard (1-5)
 
 | Dimension | Score |
 |---|---|
-| Claridad | |
-| Consistencia | |
-| Completitud | |
-| No duplicidad | |
-| Trazabilidad | |
+| Clarity | |
+| Consistency | |
+| Completeness | |
+| Low duplication | |
+| Traceability | |
 
 ## 3. Gate
 
-- Ninguna dimension < 3.
-- Promedio >= 4.
+- No dimension below 3.
+- Average score >= 4.
 
 ## 4. Checklist
 
-- [ ] SoT identificado
-- [ ] enlaces cruzados correctos
-- [ ] control de duplicidades aplicado
-- [ ] criterios de aceptacion presentes
+- [ ] SoT identified
+- [ ] cross links correct
+- [ ] duplication control applied
+- [ ] acceptance criteria present
+- [ ] stack baseline coherent

@@ -1,19 +1,19 @@
 # LLM Context Packs v1
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Definir paquetes de contexto minimos por rol para tareas en IDE+LLM.
+Define minimal context bundles by role for IDE + LLM tasks.
 
-## 2. Regla general
+## 2. Global rule
 
-- Cada prompt debe incluir solo 2-4 capsulas + 2-4 SoT.
-- Evitar contexto gigante y ambiguo.
+- Each prompt includes only 2-4 capsules + 2-4 SoT docs.
+- Avoid oversized and ambiguous context.
 
-## 3. Packs sugeridos
+## 3. Suggested packs
 
 ### Product Pack
 
@@ -25,18 +25,18 @@ Definir paquetes de contexto minimos por rol para tareas en IDE+LLM.
 ### Tech Pack
 
 - CAP-002 (Stack)
-- CAP-005 (Risks)
-- `docs/40_technical/add.md`
-- `docs/20_systems/data-dictionary-complete.md`
+- CAP-004 (API and Data)
+- `docs/40_technical/architecture-overview.md`
+- `docs/40_technical/api-contracts.md`
 
-### UX/Art Pack
+### UX Pack
 
-- CAP-004 (Visual Direction)
 - CAP-001 (MVP Scope)
+- CAP-005 (Risks)
+- `docs/10_product/user-flows.md`
 - `docs/30_experience/ui-ux.md`
-- `docs/30_experience/event-content-bible.md`
 
-### QA/Doc Pack
+### QA/Docs Pack
 
 - CAP-003 (KPI and Gates)
 - CAP-005 (Risks)

@@ -1,33 +1,45 @@
 # Phase Roadmap
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Ejecucion por fases con gates.
+Execute delivery by phases with explicit gates.
 
-## 2. Fases
+## 2. Phases
 
-### F0
-- salida esperada:
+### F0 Discovery
+- expected outputs:
 - gate:
 
-### F1
-- salida esperada:
+### F1 Planning
+- expected outputs:
 - gate:
 
-### F2
-- salida esperada:
+### F2 Architecture
+- expected outputs:
 - gate:
 
-## 3. Priorizacion
+### F3 Build
+- expected outputs:
+- gate:
 
-- P0 bloqueante
-- P1 critico
+### F4 QA
+- expected outputs:
+- gate:
+
+### F5 Release
+- expected outputs:
+- gate:
+
+## 3. Prioritization
+
+- P0 blocking
+- P1 critical
 - P2 incremental
 
-## 4. Regla
+## 4. Rule
 
-No avanzar con A0 abiertas.
+Do not advance with open A0 questions.

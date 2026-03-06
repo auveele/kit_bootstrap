@@ -1,29 +1,29 @@
 # UI UX Spec
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: {{STATUS}}
+Status: {{STATUS}}
 
-## 1. Objetivo UX
+## 1. UX objective
 
 -
 
-## 2. Flujos criticos
+## 2. Critical flows
 
 1.
 2.
 3.
 
-## 3. Responsive
+## 3. Responsive behavior
 
-- Breakpoints
-- Reglas mobile/desktop
+- breakpoints
+- mobile/desktop rules
 
-## 4. Accesibilidad
+## 4. Accessibility
 
 -
 
-## 5. Referencias
+## 5. References
 
-- `docs/10_product/core-loops.md`
+- `docs/10_product/user-flows.md`
 - `docs/50_delivery/phase-gates.md`

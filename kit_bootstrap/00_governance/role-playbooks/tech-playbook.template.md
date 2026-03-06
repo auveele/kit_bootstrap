@@ -1,25 +1,25 @@
 # Tech Playbook
 
-Rol: Tech
+Role: Tech
 
-## Objetivo del rol
+## Role objective
 
-Traducir alcance a arquitectura y contratos implementables con riesgo controlado.
+Translate scope into implementable architecture and contracts with controlled risk.
 
-## Leer primero
+## Read first
 
 - `docs/50_delivery/phase-roadmap.md`
 - `docs/20_systems/data-dictionary-complete.md`
-- `docs/40_technical/add.md`
+- `docs/40_technical/architecture-overview.md`
 
-## Entregables del rol
+## Core deliverables
 
-- contratos API
-- modelo de datos
-- decisiones tecnicas clave
+- API contracts
+- data model
+- key technical decisions
 
-## Validaciones minimas
+## Minimum validations
 
-- [ ] dependencias explicitas
-- [ ] criterios de aceptacion verificables
-- [ ] riesgo tecnico mitigado
+- [ ] dependencies explicit
+- [ ] acceptance criteria verifiable
+- [ ] technical risk mitigated

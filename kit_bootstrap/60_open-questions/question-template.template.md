@@ -1,24 +1,24 @@
 # Question Template
 
 ID: OQ-XXX
-Severidad: A0 | A1 | A2
+Severity: A0 | A1 | A2
 Owner:
-Fecha objetivo:
-Estado: Open | In Review | Resolved | Rejected
+Target date:
+Status: Open | In Review | Resolved | Rejected
 
-## Contexto
+## Context
 
-## Pregunta
+## Question
 
-## Opciones
+## Options
 1.
 2.
 
-## Impacto
-- docs afectados:
-- riesgo:
+## Impact
+- affected docs:
+- risk:
 
-## Resolucion
+## Resolution
 - decision:
-- referencia decision log:
-- cambios aplicados:
+- decision log reference:
+- applied changes:

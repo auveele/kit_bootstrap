@@ -1,46 +1,49 @@
 # Document Index
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Proposito
+## 1. Purpose
 
-Mapa maestro de documentacion activa y dependencias.
+Master map of active documentation and dependencies.
 
-## 2. Ruta de lectura recomendada
+## 2. Recommended reading order
 
 1. `docs/50_delivery/project-status.md`
 2. `docs/50_delivery/phase-roadmap.md`
 3. `docs/10_product/prd.md`
-4. `docs/10_product/gdd-lite.md`
-5. `docs/20_systems/system-balance.md`
-6. `docs/40_technical/add.md`
+4. `docs/10_product/product-requirements.md`
+5. `docs/20_systems/domain-model.md`
+6. `docs/40_technical/architecture-overview.md`
 
-## 3. Catalogo activo
+## 3. Active catalog
 
-| Documento | Rol principal | SoT | No duplicar con |
+| Document | Primary role | SoT | Do not duplicate with |
 |---|---|---|---|
-| PRD | vision, alcance, KPI | si | GDD-lite |
-| GDD-lite | reglas de diseno | si | PRD |
-| Core Loops | loop jugable | si | GDD-lite |
-| ADD | arquitectura | si | Data Dictionary Complete |
-| Roles and Rituals | roles y rituales minimos | si | RACI |
-| Role RACI Matrix | responsabilidades por flujo | si | Roles and Rituals |
-| Info Capsules | contexto reutilizable | si | LLM Context Packs |
-| LLM Context Packs | paquetes de contexto por rol | si | Info Capsules |
+| PRD | vision, scope, KPI | yes | Product Requirements |
+| Product Requirements | functional and non-functional requirements | yes | PRD |
+| User Flows | critical journeys and UX outcomes | yes | UI UX Spec |
+| Domain Model | domain boundaries and entities | yes | Data Dictionary Complete |
+| Architecture Overview | full technical architecture | yes | Frontend/Backend architecture |
+| API Contracts | request/response contracts | yes | Backend Architecture |
+| Roles and Rituals | role model and lightweight rituals | yes | RACI Matrix |
+| Role RACI Matrix | ownership per workflow | yes | Roles and Rituals |
+| Info Capsules | reusable context summaries | yes | LLM Context Packs |
+| LLM Context Packs | role-based context bundles | yes | Info Capsules |
 
-## 4. Dependencias criticas
+## 4. Critical dependencies
 
-- producto -> sistemas -> tecnico -> delivery
+- product -> systems -> technical -> delivery
 
-## 5. Politica de actualizacion
+## 5. Update policy
 
-- Todo documento nuevo debe registrarse aqui.
-- Todo cambio mayor debe ir a release notes.
+- Every new document must be registered here.
+- Every structural change must be tracked in release notes.
 
 ## 6. Checklist
 
-- [ ] docs listados
-- [ ] dependencias coherentes
-- [ ] enlaces vigentes
+- [ ] docs are listed
+- [ ] dependencies are coherent
+- [ ] links are valid
+- [ ] stack baseline is coherent (React + Flask + SQLAlchemy + SQLite)

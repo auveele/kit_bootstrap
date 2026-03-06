@@ -1,25 +1,25 @@
 # Product Playbook
 
-Rol: Product
+Role: Product
 
-## Objetivo del rol
+## Role objective
 
-Definir valor, alcance y prioridades sin romper viabilidad de ejecucion.
+Define value, scope, and priorities while preserving execution feasibility.
 
-## Leer primero
+## Read first
 
 - `docs/50_delivery/project-status.md`
 - `docs/50_delivery/phase-roadmap.md`
 - `docs/10_product/prd.md`
 
-## Entregables del rol
+## Core deliverables
 
-- alcance in/out del MVP
-- KPI y umbrales
-- priorizacion P0/P1/P2
+- MVP scope in/out
+- KPI and thresholds
+- P0/P1/P2 prioritization
 
-## Validaciones minimas
+## Minimum validations
 
-- [ ] sin contradiccion con roadmap
-- [ ] dudas A0 cerradas
-- [ ] impacto en usuario claro
+- [ ] no contradiction with roadmap
+- [ ] A0 questions closed
+- [ ] user impact is explicit

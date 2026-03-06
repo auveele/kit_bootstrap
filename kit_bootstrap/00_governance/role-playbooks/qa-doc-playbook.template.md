@@ -1,25 +1,25 @@
-# QA Doc Playbook
+# QA Docs Playbook
 
-Rol: QA/Doc
+Role: QA/Docs
 
-## Objetivo del rol
+## Role objective
 
-Asegurar calidad documental, coherencia cross-doc y control de duplicidades.
+Ensure documentation quality, cross-doc coherence, and duplication control.
 
-## Leer primero
+## Read first
 
 - `docs/00_governance/reference-rules.md`
 - `docs/00_governance/document-index.md`
 - `docs/50_delivery/phase-gates.md`
 
-## Entregables del rol
+## Core deliverables
 
-- scorecard documental
-- validacion de enlaces
-- reporte de contradicciones/duplicidades
+- documentation scorecard
+- link validation
+- contradiction/duplication report
 
-## Validaciones minimas
+## Minimum validations
 
-- [ ] enlaces sin roturas
-- [ ] no duplicidad validada
-- [ ] SoT por tema claro
+- [ ] no broken links
+- [ ] duplication validated
+- [ ] SoT ownership clear

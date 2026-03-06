@@ -1,50 +1,63 @@
 # Agentic Workflow (IDE + LLM)
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Optimizar ejecucion con LLM manteniendo calidad y trazabilidad.
+Run end-to-end execution with LLM support while preserving quality,
+traceability, and delivery discipline.
 
-## 2. Task Packet obligatorio
+## 2. Official phase model
 
-Cada tarea debe incluir:
-1. objetivo
-2. alcance in/out
-3. SoT implicados
-4. cambios esperados por archivo
-5. criterios de aceptacion
-6. verificacion
-7. riesgo/rollback
+1. F0 Discovery
+2. F1 Planning
+3. F2 Architecture
+4. F3 Build
+5. F4 QA
+6. F5 Release
 
-## 3. Plantilla de prompt
+Do not advance with open `A0` questions.
+
+## 3. Mandatory Task Packet
+
+Every task must include:
+1. objective
+2. scope in/out
+3. involved SoT
+4. expected file-level changes
+5. acceptance criteria
+6. verification method
+7. risk and rollback
+
+## 4. Prompt template
 
 ```text
-Objetivo:
+Objective:
 
-Contexto minimo:
+Minimum context:
 
 Source of Truth:
 -
 
-Instrucciones de cambio:
+Change instructions:
 -
 
-Criterios de aceptacion:
+Acceptance criteria:
 - [ ]
 
-Verificacion:
+Verification:
 -
 
-No hacer:
+Do not:
 -
 ```
 
-## 4. DoD para tareas con agente
+## 5. Definition of Done for agent tasks
 
-- [ ] cumple criterios
-- [ ] sin romper SoT
-- [ ] docs actualizadas
-- [ ] evidencia de verificacion
+- [ ] acceptance criteria are met
+- [ ] no SoT conflicts introduced
+- [ ] related docs are updated
+- [ ] verification evidence exists
+- [ ] stack coherence kept (React + Flask + SQLAlchemy + SQLite)

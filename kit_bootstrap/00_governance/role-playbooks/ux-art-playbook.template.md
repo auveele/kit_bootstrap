@@ -1,25 +1,25 @@
-# UX Art Playbook
+# UX Playbook
 
-Rol: UX/Art
+Role: UX
 
-## Objetivo del rol
+## Role objective
 
-Definir experiencia clara, atractiva y consistente con alcance MVP.
+Define clear and consistent user experience aligned with MVP scope.
 
-## Leer primero
+## Read first
 
-- `docs/10_product/core-loops.md`
+- `docs/10_product/user-flows.md`
 - `docs/30_experience/ui-ux.md`
 - `docs/50_delivery/phase-gates.md`
 
-## Entregables del rol
+## Core deliverables
 
-- flujos criticos
-- reglas visuales
-- criterios de calidad UX
+- critical user journeys
+- interaction rules
+- UX quality criteria
 
-## Validaciones minimas
+## Minimum validations
 
-- [ ] flujos MVP cubiertos
-- [ ] consistencia visual
-- [ ] sin contradiccion con loops
+- [ ] MVP flows covered
+- [ ] interface consistency
+- [ ] no contradiction with product docs

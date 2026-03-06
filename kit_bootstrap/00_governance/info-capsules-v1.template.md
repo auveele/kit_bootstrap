@@ -1,42 +1,43 @@
 # Info Capsules v1
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Crear capsulas cortas y reutilizables de contexto para acelerar trabajo humano + LLM sin sobrecargar prompts.
+Create short, reusable context capsules to accelerate human + LLM execution
+without overloaded prompts.
 
-## 2. Formato de capsula
+## 2. Capsule format
 
-| Campo | Descripcion |
+| Field | Description |
 |---|---|
-| capsule_id | ID unico (CAP-XXX) |
-| nombre | nombre corto |
-| owner | responsable |
-| version | version |
-| estado | Vigente/Borrador/Archivado |
-| resumen | 3-6 bullets max |
-| SoT | enlace al documento fuente |
-| uso | tareas donde aplica |
+| capsule_id | Unique ID (CAP-XXX) |
+| name | Short capsule name |
+| owner | Responsible owner |
+| version | Capsule version |
+| status | Active/Draft/Archived |
+| summary | 3-6 bullets max |
+| SoT | Link to source document |
+| usage | Tasks where this applies |
 
-## 3. Capsulas recomendadas
+## 3. Recommended capsules
 
 - CAP-001 MVP Scope Capsule
-- CAP-002 Stack Capsule
+- CAP-002 Stack Capsule (React/Flask/SQLAlchemy/SQLite)
 - CAP-003 KPI and Gates Capsule
-- CAP-004 Visual Direction Capsule
+- CAP-004 API and Data Capsule
 - CAP-005 Risks Capsule
 
-## 4. Reglas
+## 4. Rules
 
-- Una capsula resume, no reemplaza su SoT.
-- Toda capsula debe enlazar documento fuente.
-- Actualizar capsula cuando cambie su SoT.
+- A capsule summarizes and never replaces its SoT.
+- Every capsule must link source document.
+- Update capsule when source SoT changes.
 
-## 5. Registro de capsulas
+## 5. Capsule registry
 
-| ID | Nombre | Owner | Version | Estado | SoT |
+| ID | Name | Owner | Version | Status | SoT |
 |---|---|---|---|---|---|
 | CAP-001 | | | | | |

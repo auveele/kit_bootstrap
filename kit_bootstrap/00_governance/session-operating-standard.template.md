@@ -1,47 +1,43 @@
 # Session Operating Standard
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Definir como operar sesiones de desarrollo/documentacion con continuidad inter-sesion.
+Define how development/documentation sessions operate with cross-session
+continuity.
 
-## 2. Estructura oficial
+## 2. Official structure
 
-- Raiz: `README.md`, `app/`, `docs/`.
-- Documentacion activa solo en `docs/`.
-- Historico en `docs/90_archive/`.
+- Root: `README.md`, `frontend/`, `backend/`, `docs/`.
+- Active documentation only in `docs/`.
+- Historical docs in `docs/90_archive/`.
 
-## 3. Flujo por fases
+## 3. Phase flow
 
-- Fases con gates PASS/FAIL.
-- No avanzar con A0 abiertas.
+- Work runs by PASS/FAIL gates.
+- Do not advance with open `A0` questions.
 
-## 3.b Roles y capsulas
+## 4. Prioritization
 
-- Usar roles ultralight para tareas/gates/decisiones clave.
-- Mantener capsulas de informacion para reducir contexto en prompts.
-- No declarar rol en cada mensaje cotidiano.
-
-## 4. Priorizacion
-
-- P0 bloqueante
-- P1 critico
+- P0 blocking
+- P1 critical
 - P2 incremental
 
-## 5. Intake de archivos nuevos
+## 5. New artifact intake
 
-1. clasificar activo vs archivo,
-2. mover a dominio correcto,
-3. actualizar enlaces,
-4. actualizar indice/release notes,
-5. registrar dudas.
+1. classify active vs archived,
+2. move to correct domain,
+3. update links,
+4. update index/release notes,
+5. track open questions.
 
-## 6. Cierre de sesion
+## 6. Session close checklist
 
-- [ ] enlaces validados
-- [ ] decision log actualizado
-- [ ] release notes actualizado
-- [ ] riesgos/dudas actualizados
+- [ ] links validated
+- [ ] decision log updated
+- [ ] release notes updated
+- [ ] risks/questions refreshed
+- [ ] phase and gate status refreshed

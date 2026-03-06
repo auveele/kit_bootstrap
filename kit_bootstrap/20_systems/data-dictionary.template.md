@@ -1,22 +1,23 @@
 # Data Dictionary
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: {{STATUS}}
+Status: {{STATUS}}
 
-## 1. Entidades clave
+## 1. Key entities
 
-| Entidad | Descripcion |
+| Entity | Description |
 |---|---|
 | | |
 
-## 2. Campos clave
+## 2. Key fields
 
-| Entidad | Campo | Tipo logico | Notas |
+| Entity | Field | Logical type | Notes |
 |---|---|---|---|
 | | | | |
 
-## 3. Referencias
+## 3. References
 
 - `docs/20_systems/data-dictionary-complete.md`
-- `docs/40_technical/add.md`
+- `docs/20_systems/domain-model.md`
+- `docs/40_technical/api-contracts.md`

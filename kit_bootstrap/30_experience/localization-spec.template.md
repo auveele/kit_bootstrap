@@ -1,29 +1,29 @@
 # Localization Spec
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: {{STATUS}}
+Status: {{STATUS}}
 
-## 1. Idiomas objetivo
-
--
-
-## 2. Convencion de claves
+## 1. Target locales
 
 -
 
-## 3. Archivos i18n
+## 2. Key naming convention
+
+-
+
+## 3. i18n files
 
 ```text
-app/locales/
-  xx-XX.json
+frontend/src/locales/
+  en-US.json
 ```
 
-## 4. QA de localizacion
+## 4. Localization QA
 
 -
 
-## 5. Referencias
+## 5. References
 
 - `docs/30_experience/ui-ux.md`
 - `docs/00_governance/qa-editorial.md`

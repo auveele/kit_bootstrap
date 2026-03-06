@@ -1,14 +1,14 @@
 # Decision Log
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 
-## Formato de entrada
+## Entry format
 
-| ID | Fecha | Decision | Contexto | Opciones | Impacto | Owner | Estado |
+| ID | Date | Decision | Context | Options | Impact | Owner | Status |
 |---|---|---|---|---|---|---|---|
 | DEC-0001 | {{DATE}} | {{DECISION}} | {{CONTEXT}} | {{OPTIONS}} | {{IMPACT}} | {{OWNER}} | Approved |
 
-## Reglas
+## Rules
 
-- Toda decision estructural entra aqui.
-- Debe referenciar documentos impactados.
+- Every structural decision must be logged here.
+- Each decision must reference impacted documents.

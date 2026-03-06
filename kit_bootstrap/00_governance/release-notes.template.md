@@ -1,23 +1,23 @@
 # Release Notes
 
-Proyecto: {{PROJECT_NAME}}
-Tipo: Historico de cambios documentales
+Project: {{PROJECT_NAME}}
+Type: Documentation and operating-system change history
 
 ## vX.Y - {{RELEASE_NAME}} ({{DATE}})
 
 ### Added
-- archivo
+- file
 
 ### Changed
-- archivo
+- file
 
 ### Deprecated
-- archivo
+- file
 
 ### Impact
-- impacto esperado
+- expected impact
 
-## Reglas
+## Rules
 
-- Cada cambio mayor de docs debe registrarse.
-- Mantener historial cronologico descendente.
+- Every major docs/system change must be registered.
+- Keep history in descending chronological order.

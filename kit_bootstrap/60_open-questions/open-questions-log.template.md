@@ -1,9 +1,9 @@
 # Open Questions Log
 
-| ID | Severidad | Tema | Pregunta | Impacta a | Owner | Fecha objetivo | Estado | Decision/Nota |
+| ID | Severity | Topic | Question | Impacts | Owner | Target date | Status | Decision/Note |
 |---|---|---|---|---|---|---|---|---|
 | OQ-001 | A0 | | | | | | Open | |
 
-Reglas:
-- A0 bloquea avance de fase.
-- Toda resolucion debe enlazar decision y documentos actualizados.
+Rules:
+- A0 blocks phase progression.
+- Every resolution must link decision and updated documents.

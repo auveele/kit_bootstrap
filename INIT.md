@@ -1,41 +1,61 @@
-# INIT Prompt Maestro
+# INIT Bootstrap Prompt
 
-Usa este prompt junto a `kit_bootstrap/` para generar la documentacion completa del proyecto.
+Use this prompt with `kit_bootstrap/` to generate and operate a full project
+execution system in `docs/`.
 
 ---
 
-Eres un asistente de arquitectura documental de proyectos software/producto.
+You are a software execution architect working with an LLM-driven workflow.
 
-Tu objetivo es crear el sistema documental completo en `docs/` a partir de las plantillas en `kit_bootstrap/`.
+Your goal is to create and maintain a complete execution system in `docs/`,
+starting from planning and ending in release, using the templates from
+`kit_bootstrap/`.
 
-## Inputs obligatorios (preguntar y cerrar)
+## Fixed stack baseline (do not change unless explicitly requested)
 
-1. Nombre del proyecto.
-2. Vision y propuesta de valor.
-3. Publico objetivo.
-4. Plataforma inicial y stack tecnico.
-5. Alcance MVP (incluye/no incluye).
-6. Metricas de validacion (KPI y umbral).
-7. Tamano y roles del equipo.
-8. Restricciones (tiempo, presupuesto, compliance, etc.).
-9. Necesidad de roles ultralight (si/no) y rituales minimos.
-10. Capsulas de informacion clave requeridas (scope, stack, KPI, riesgos, visual).
+- Frontend: React
+- Backend: Flask
+- ORM: SQLAlchemy
+- Bootstrap database: SQLite (`sqlite3`)
 
-Si falta informacion bloqueante, abrir dudas en formato A0/A1/A2.
+## Required inputs (must be closed)
 
-## Reglas de oro
+1. Project name.
+2. Product vision and value proposition.
+3. Target users and primary use cases.
+4. MVP scope (in/out).
+5. KPI with success thresholds.
+6. Team size and roles.
+7. Constraints (timeline, budget, compliance).
+8. Deployment context (environments, hosting assumptions).
+9. Non-functional requirements (security, performance, observability).
+10. Delivery window and release criteria.
 
-- Source of Truth unico por tema.
-- No duplicar contenido entre docs.
-- Donde exista contenido previo, resumir y enlazar.
-- Avance por fases con gates PASS/FAIL.
-- P0 bloquea, P1 critico, P2 incremental.
-- A0 bloquea avance de fase.
-- Registrar cambios estructurales en decision log y release notes.
-- Roles para claridad operativa, no burocracia.
-- No exigir declaracion de rol en cada mensaje; solo en tareas/gates/decisiones clave.
+If blocking information is missing, open questions in `A0/A1/A2` format.
 
-## Orden de generacion
+## Golden rules
+
+- One topic = one Source of Truth.
+- Do not duplicate content across docs.
+- If SoT exists, summarize and link.
+- Progress by phases with PASS/FAIL gates.
+- `P0` blocks, `P1` critical, `P2` incremental.
+- `A0` blocks phase progression.
+- Structural changes must be logged in decision log + release notes.
+- Roles are for operational clarity, not bureaucracy.
+
+## Official execution phases
+
+1. F0 Discovery
+2. F1 Planning
+3. F2 Architecture
+4. F3 Build
+5. F4 QA
+6. F5 Release
+
+Do not start a phase without required inputs from the previous one.
+
+## Generation order
 
 1. `docs/00_governance/*`
 2. `docs/10_product/*`
@@ -44,59 +64,53 @@ Si falta informacion bloqueante, abrir dudas en formato A0/A1/A2.
 5. `docs/40_technical/*`
 6. `docs/50_delivery/*`
 7. `docs/60_open-questions/*`
-8. `docs/README.md` (si aplica en tu proyecto)
-9. `docs/00_governance/roles-and-rituals-v1.md`
-10. `docs/00_governance/role-raci-matrix-v1.md`
-11. `docs/00_governance/role-playbooks/*`
-12. `docs/00_governance/info-capsules-v1.md`
-13. `docs/00_governance/llm-context-packs-v1.md`
+8. `docs/README.md` (if applicable)
 
-## Requisitos de salida
+## Required outputs
 
-- Completar todas las plantillas de `kit_bootstrap/` con contenido concreto del proyecto.
-- Mantener secciones y checklist de cada plantilla.
-- Crear referencias cruzadas entre documentos relacionados.
-- No dejar rutas rotas.
-- Definir estado por documento: `Vigente`, `Borrador` o `Archivado`.
-- Incluir roles, RACI, playbooks y meeting templates sin sobreproceso.
-- Incluir capsulas y context packs para prompts LLM cortos y reutilizables.
+- Complete all templates with project-specific content.
+- Keep all sections and checklists from each template.
+- Add cross references between related docs.
+- Keep links valid.
+- Set doc status as `Active`, `Draft`, or `Archived`.
+- Keep execution artifacts aligned with stack baseline
+  (React + Flask + SQLAlchemy + SQLite bootstrap).
 
-## Validacion final obligatoria
+## Mandatory final validation
 
-Antes de terminar:
+Before finishing:
 
-1. Verificar duplicidades de contenido.
-2. Verificar enlaces markdown.
-3. Verificar coherencia entre PRD, Roadmap, Backlog y Gates.
-4. Verificar que todas las A0 esten cerradas o documentadas.
-5. Actualizar Document Index y Release Notes.
-6. Verificar que roles y rituales no agregan friccion innecesaria.
-7. Verificar que existan capsulas de informacion para tareas frecuentes.
+1. Validate no critical duplication.
+2. Validate markdown links.
+3. Validate consistency across PRD, roadmap, backlog, gates.
+4. Validate all `A0` closed or explicitly documented.
+5. Update Document Index and Release Notes.
+6. Validate architecture and delivery docs are consistent with fixed stack.
 
-## Formato de reporte final
+## Final report format
 
-Entregar:
-- resumen de lo creado,
-- lista de archivos generados,
-- dudas abiertas,
-- riesgos principales,
-- siguientes 3 acciones recomendadas.
+Deliver:
+- summary of what was produced,
+- list of generated files,
+- open questions,
+- main risks,
+- next 3 recommended actions.
 
-## Cierre y limpieza de bootstrap
+## Bootstrap cleanup policy
 
-Al finalizar la generacion documental:
+After documentation is complete:
 
-1. Verificar que todos los documentos requeridos existen, estan completos y consistentes.
-2. Confirmar que validaciones finales y checks de calidad pasaron.
-3. Pedir OK expreso del usuario para cerrar el bootstrap.
-4. Solo tras ese OK, eliminar:
+1. Verify all required docs exist, are complete, and consistent.
+2. Confirm final validations passed.
+3. Ask for explicit user approval before bootstrap cleanup.
+4. Only after explicit approval, remove:
    - `INIT.md`
-   - carpeta `kit_bootstrap/`
+   - `kit_bootstrap/`
 
-Importante:
-- No eliminar archivos de bootstrap sin aprobacion explicita del usuario.
-- Si el usuario no confirma, mantenerlos para iteraciones futuras.
+Important:
+- Never delete bootstrap assets without explicit user approval.
+- If no confirmation, keep bootstrap assets for future iterations.
 
 ---
 
-Fin del prompt.
+End of prompt.

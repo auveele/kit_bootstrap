@@ -1,21 +1,21 @@
 # Role RACI Matrix v1
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## Matriz RACI
+## RACI matrix
 
-| Flujo | Product | Tech | UX/Art | QA/Doc | Ops/PM |
+| Workflow | Product | Tech | UX | QA/Docs | Ops/PM |
 |---|---|---|---|---|---|
-| Definir alcance MVP | A | C | C | I | R |
-| Definir arquitectura | C | A | I | C | R |
-| Definir experiencia | C | C | A | C | I |
-| Aprobar gate de fase | A | A | C | R | R |
-| Cerrar duda A0 | A | A | C | C | R |
-| Publicar release notes | I | C | I | A | R |
+| Define MVP scope | A | C | C | I | R |
+| Define architecture | C | A | I | C | R |
+| Define user flows | C | C | A | C | I |
+| Approve phase gate | A | A | C | R | R |
+| Close A0 question | A | A | C | C | R |
+| Publish release notes | I | C | I | A | R |
 
-Leyenda:
+Legend:
 - R: Responsible
 - A: Accountable
 - C: Consulted

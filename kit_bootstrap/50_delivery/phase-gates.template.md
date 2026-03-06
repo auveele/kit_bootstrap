@@ -1,22 +1,31 @@
 # Phase Gates
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## Gate F0
+## Gate F0 Discovery
 - [ ]
 
-## Gate F1
+## Gate F1 Planning
 - [ ]
 
-## Gate F2
+## Gate F2 Architecture
 - [ ]
 
-## Regla de waiver
+## Gate F3 Build
+- [ ]
 
-Solo con:
-- causa documentada
+## Gate F4 QA
+- [ ]
+
+## Gate F5 Release
+- [ ]
+
+## Waiver rule
+
+Allowed only with:
+- documented cause
 - owner
-- fecha de cierre
-- aprobacion Product + Tech
+- closure date
+- Product + Tech approval

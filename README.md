@@ -4,22 +4,23 @@
 [![Docs: Markdown](https://img.shields.io/badge/docs-markdown-informational.svg)](#)
 [![Workflow: Agent-First](https://img.shields.io/badge/workflow-agent--first-0a7ea4.svg)](#agent-first-default)
 
-Documentation bootstrap for software projects executed primarily by an
+Execution system bootstrap for software projects run primarily by an
 autonomous agent, with optional human review.
 
 ## 30-second pitch
 
 If your project runs with AI in the loop, this repo gives you a practical
-operating system for documentation:
+operating system for end-to-end execution:
 
 - one Source of Truth per topic,
 - phase-based execution with `PASS/FAIL` gates,
 - explicit open-question tracking (`A0/A1/A2`),
 - decision and release traceability,
-- reusable context packets for consistent LLM execution.
+- reusable context packets for consistent LLM execution,
+- built-in defaults for React frontend + Flask backend.
 
-It is domain-agnostic, but defaults to web/app product work
-(frontend + backend) out of the box.
+It is focused on web product delivery with a fixed stack baseline:
+React frontend + Flask backend + SQLAlchemy ORM + SQLite bootstrap DB.
 
 ## Quick start
 
@@ -54,7 +55,8 @@ Agentic software workflows often fail in predictable ways:
 - prompts are ambiguous or overloaded,
 - roadmap/backlog lose alignment with real execution.
 
-`kit_bootstrap` is an opinionated baseline to avoid that from day one.
+`kit_bootstrap` is an opinionated baseline to avoid that from day one and
+move from planning to delivery with a single operating model.
 
 ## Agent-first default
 
@@ -75,15 +77,17 @@ Agentic software workflows often fail in predictable ways:
 ## What you get
 
 - `INIT.md`: master bootstrap prompt.
-- `kit_bootstrap/`: template library to generate your `docs/`.
+- `kit_bootstrap/`: execution-system templates to generate your `docs/`.
 - Governance templates: document index, reference rules, editorial QA,
   decision log, release notes.
-- Product templates: PRD, lightweight design docs, core loops.
-- Systems templates: data dictionary, detailed model, balance sheet.
+- Product templates: PRD, requirements, MVP scope, user flows.
+- Systems templates: domain model, data dictionary, detailed model.
 - Experience templates: UI/UX, localization, content operations, narrative.
-- Technical templates: architecture decision docs and technical specs.
+- Technical templates: React/Flask architecture, API contracts, security, deployment.
 - Delivery templates: roadmap, phase gates, backlog, status, meeting templates.
 - LLM templates: info capsules and role-oriented context packs.
+- Validation tooling: markdown checks + CI gate workflow.
+- Example project docs: ready-to-run React + Flask monorepo sample.
 
 ## Repository structure
 
@@ -92,6 +96,13 @@ Agentic software workflows often fail in predictable ways:
 |- INIT.md
 |- LICENSE
 |- README.md
+|- tools/
+|  |- bootstrap.py
+|  |- validate_docs.py
+|  `- validate_coherence.py
+|- examples/
+|  `- react-flask-monorepo/
+|     `- docs/
 `- kit_bootstrap/
    |- 00_governance/
    |- 10_product/
@@ -121,8 +132,37 @@ Final checks:
 - no broken links,
 - PRD/roadmap/backlog/gates coherence,
 - `A0` questions resolved or explicitly documented.
+- stack coherence for React + Flask + SQLAlchemy + SQLite bootstrap.
 
 See `kit_bootstrap/QUICKSTART.md` for the compact checklist.
+
+Template validation command:
+
+```bash
+python tools/validate_docs.py --root . --profile templates
+```
+
+Project validation command:
+
+```bash
+python tools/validate_docs.py --root docs --profile project
+```
+
+Unified check command:
+
+```bash
+python tools/bootstrap.py check --root docs
+```
+
+Check the included example end-to-end:
+
+```bash
+python tools/bootstrap.py check --root examples/react-flask-monorepo/docs
+```
+
+Tooling reference:
+
+- `tools/README.md`
 
 ## Who this is for
 

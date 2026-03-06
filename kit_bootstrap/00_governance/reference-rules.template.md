@@ -1,40 +1,41 @@
 # Reference Rules
 
-Proyecto: {{PROJECT_NAME}}
+Project: {{PROJECT_NAME}}
 Version: {{DOC_VERSION}}
-Estado: Vigente
+Status: Active
 
-## 1. Objetivo
+## 1. Objective
 
-Definir reglas globales para evitar duplicidades y mantener trazabilidad.
+Define global rules to prevent duplication and preserve traceability.
 
-## 2. Reglas globales
+## 2. Global rules
 
-- 1 tema = 1 Source of Truth.
-- Si ya existe SoT, resumir + enlazar.
-- No copiar bloques largos entre docs.
-- Prioridad por version mas reciente.
+- 1 topic = 1 Source of Truth.
+- If SoT exists, summarize and link.
+- Do not copy large blocks across documents.
+- Newest approved version has priority.
+- Keep stack assumptions aligned with React + Flask + SQLAlchemy + SQLite.
 
-## 3. Control de duplicidades (obligatorio)
+## 3. Duplication control (mandatory)
 
-Antes de publicar un doc:
+Before publishing any document:
 
-- [ ] Existe SoT previo de este tema.
-- [ ] Si existe, este doc enlaza y no duplica.
-- [ ] No se repiten tablas/formulas de otro SoT.
-- [ ] Se actualizo Document Index si aplica.
+- [ ] Existing SoT for this topic was checked.
+- [ ] If SoT exists, this document links and does not duplicate.
+- [ ] Tables/formulas from other SoT are not repeated.
+- [ ] Document Index was updated when applicable.
 
-Regla de decision:
-- Si hay SoT previo -> no crear SoT nuevo.
-- Si no hay SoT -> crear y registrar en indice.
+Decision rule:
+- If SoT exists -> do not create a new SoT.
+- If SoT does not exist -> create one and register it.
 
-## 4. Reglas de referencias
+## 4. Reference rules
 
-- Usar enlaces a `.md` reales.
-- Evitar referencias ambiguas.
-- Verificar enlaces despues de mover archivos.
+- Use links to real `.md` files.
+- Avoid ambiguous references.
+- Revalidate links after moves/renames.
 
-## 5. Trazabilidad
+## 5. Traceability
 
-- Cambios estructurales -> decision log.
-- Cambios de version -> release notes.
+- Structural changes -> decision log.
+- Version changes -> release notes.

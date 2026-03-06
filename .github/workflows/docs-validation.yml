@@ -1,0 +1,24 @@
+name: Docs Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Validate markdown templates
+        run: python tools/validate_docs.py --root . --profile templates
+
+      - name: Validate example docs end-to-end
+        run: python tools/bootstrap.py check --root examples/react-flask-monorepo/docs
