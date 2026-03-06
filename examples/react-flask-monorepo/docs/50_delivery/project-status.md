@@ -1,3 +1,15 @@
+---
+doc_id: DEL-004
+title: Project Status
+owner: Ops-PM
+status: Active
+version: "1.0"
+phase: F3
+sot: true
+depends_on: [DEL-001, DEL-002, DEL-003]
+last_updated: 2026-03-06
+---
+
 # Project Status
 
 Project: Acme Portal

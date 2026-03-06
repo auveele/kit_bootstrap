@@ -39,3 +39,8 @@ Decision rule:
 
 - Structural changes -> decision log.
 - Version changes -> release notes.
+
+## 6. Schema rule
+
+- Core docs must include the frontmatter contract from
+  `docs/00_governance/docs-schema.md`.

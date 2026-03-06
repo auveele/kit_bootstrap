@@ -17,7 +17,7 @@ Master map of active documentation and dependencies.
 5. `docs/20_systems/domain-model.md`
 6. `docs/40_technical/architecture-overview.md`
 
-## 3. Active catalog
+## 3. Core catalog (mandatory)
 
 | Document | Primary role | SoT | Do not duplicate with |
 |---|---|---|---|
@@ -27,23 +27,35 @@ Master map of active documentation and dependencies.
 | Domain Model | domain boundaries and entities | yes | Data Dictionary Complete |
 | Architecture Overview | full technical architecture | yes | Frontend/Backend architecture |
 | API Contracts | request/response contracts | yes | Backend Architecture |
+| Traceability Matrix | requirement-to-delivery mapping | yes | Priority Backlog |
 | Roles and Rituals | role model and lightweight rituals | yes | RACI Matrix |
 | Role RACI Matrix | ownership per workflow | yes | Roles and Rituals |
 | Info Capsules | reusable context summaries | yes | LLM Context Packs |
 | LLM Context Packs | role-based context bundles | yes | Info Capsules |
 
-## 4. Critical dependencies
+## 4. Extended catalog (optional)
+
+| Document | Purpose |
+|---|---|
+| UI UX Spec | deeper UX specifications |
+| Localization Spec | multilingual delivery rules |
+| Content Operations | content lifecycle and QA |
+| Narrative README | non-technical positioning docs |
+| Meeting Templates | operational facilitation templates |
+
+## 5. Critical dependencies
 
 - product -> systems -> technical -> delivery
 
-## 5. Update policy
+## 6. Update policy
 
 - Every new document must be registered here.
 - Every structural change must be tracked in release notes.
 
-## 6. Checklist
+## 7. Checklist
 
 - [ ] docs are listed
 - [ ] dependencies are coherent
 - [ ] links are valid
 - [ ] stack baseline is coherent (React + Flask + SQLAlchemy + SQLite)
+- [ ] every core doc has frontmatter schema

@@ -1,3 +1,15 @@
+---
+doc_id: DEL-003
+title: Priority Backlog
+owner: Product
+status: Active
+version: "1.0"
+phase: F1
+sot: true
+depends_on: [PRO-002]
+last_updated: 2026-03-06
+---
+
 # Priority Backlog
 
 Project: Acme Portal

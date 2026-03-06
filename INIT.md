@@ -43,6 +43,7 @@ If blocking information is missing, open questions in `A0/A1/A2` format.
 - `A0` blocks phase progression.
 - Structural changes must be logged in decision log + release notes.
 - Roles are for operational clarity, not bureaucracy.
+- Use core docs first, then extend only if needed.
 
 ## Official execution phases
 
@@ -69,6 +70,7 @@ Do not start a phase without required inputs from the previous one.
 ## Required outputs
 
 - Complete all templates with project-specific content.
+- Prioritize core templates before optional/extended templates.
 - Keep all sections and checklists from each template.
 - Add cross references between related docs.
 - Keep links valid.
@@ -86,6 +88,7 @@ Before finishing:
 4. Validate all `A0` closed or explicitly documented.
 5. Update Document Index and Release Notes.
 6. Validate architecture and delivery docs are consistent with fixed stack.
+7. Validate FR/NFR traceability matrix is complete for all P0/P1 scope.
 
 ## Final report format
 

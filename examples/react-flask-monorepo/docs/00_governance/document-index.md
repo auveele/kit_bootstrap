@@ -25,9 +25,11 @@ Master map of active documentation and dependencies.
 | `../10_product/product-requirements.md` | yes |
 | `../40_technical/api-contracts.md` | yes |
 | `../50_delivery/phase-gates.md` | yes |
+| `../50_delivery/traceability-matrix.md` | yes |
 
 ## Checklist
 
 - [x] docs listed
 - [x] dependencies coherent
 - [x] links valid
+- [x] requirement traceability complete

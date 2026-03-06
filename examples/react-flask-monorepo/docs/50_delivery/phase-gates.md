@@ -1,3 +1,15 @@
+---
+doc_id: DEL-002
+title: Phase Gates
+owner: QA-Docs
+status: Active
+version: "1.0"
+phase: F2
+sot: true
+depends_on: [DEL-001]
+last_updated: 2026-03-06
+---
+
 # Phase Gates
 
 Project: Acme Portal

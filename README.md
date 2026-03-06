@@ -18,6 +18,7 @@ operating system for end-to-end execution:
 - decision and release traceability,
 - reusable context packets for consistent LLM execution,
 - built-in defaults for React frontend + Flask backend.
+- core-first documentation model (mandatory + optional layers).
 
 It is focused on web product delivery with a fixed stack baseline:
 React frontend + Flask backend + SQLAlchemy ORM + SQLite bootstrap DB.
@@ -80,11 +81,13 @@ move from planning to delivery with a single operating model.
 - `kit_bootstrap/`: execution-system templates to generate your `docs/`.
 - Governance templates: document index, reference rules, editorial QA,
   decision log, release notes.
+- Execution templates: phase prompts, LLM execution protocol, docs schema.
 - Product templates: PRD, requirements, MVP scope, user flows.
 - Systems templates: domain model, data dictionary, detailed model.
 - Experience templates: UI/UX, localization, content operations, narrative.
 - Technical templates: React/Flask architecture, API contracts, security, deployment.
 - Delivery templates: roadmap, phase gates, backlog, status, meeting templates.
+- Delivery assurance templates: traceability matrix.
 - LLM templates: info capsules and role-oriented context packs.
 - Validation tooling: markdown checks + CI gate workflow.
 - Example project docs: ready-to-run React + Flask monorepo sample.
@@ -133,6 +136,7 @@ Final checks:
 - PRD/roadmap/backlog/gates coherence,
 - `A0` questions resolved or explicitly documented.
 - stack coherence for React + Flask + SQLAlchemy + SQLite bootstrap.
+- FR/NFR traceability to gates and release.
 
 See `kit_bootstrap/QUICKSTART.md` for the compact checklist.
 
@@ -153,6 +157,11 @@ Unified check command:
 ```bash
 python tools/bootstrap.py check --root docs
 ```
+
+Core-first rollout:
+
+- Core docs are mandatory and should be generated first.
+- Extended docs are optional and should only be created when needed.
 
 Check the included example end-to-end:
 

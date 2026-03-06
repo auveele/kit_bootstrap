@@ -1,3 +1,15 @@
+---
+doc_id: PRO-002
+title: Product Requirements
+owner: Product
+status: Active
+version: "1.0"
+phase: F1
+sot: true
+depends_on: [PRO-001]
+last_updated: 2026-03-06
+---
+
 # Product Requirements
 
 Project: Acme Portal

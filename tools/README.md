@@ -47,10 +47,14 @@ Cross-document consistency validator for delivery flow.
 
 Checks:
 - required files exist,
+- core docs include required frontmatter fields,
 - FR/NFR IDs in `10_product/product-requirements.md` are referenced in
   `50_delivery/priority-backlog.md`,
 - phases in `50_delivery/phase-roadmap.md` exist in
   `50_delivery/phase-gates.md` and `50_delivery/project-status.md`,
+- FR/NFR IDs are present in `50_delivery/traceability-matrix.md`,
+- each traceability row has backlog item, valid phase gate, evidence, and
+  release note,
 - no open `A0` item remains in `60_open-questions/open-questions-log.md`.
 
 Example:

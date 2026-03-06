@@ -1,3 +1,15 @@
+---
+doc_id: DEL-001
+title: Phase Roadmap
+owner: Ops-PM
+status: Active
+version: "1.0"
+phase: F1
+sot: true
+depends_on: [PRO-001, PRO-002]
+last_updated: 2026-03-06
+---
+
 # Phase Roadmap
 
 Project: Acme Portal

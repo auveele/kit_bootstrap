@@ -20,10 +20,7 @@ Status: {{STATUS}}
 
 ## 3. Constraints
 
-- React frontend
-- Flask backend
-- SQLAlchemy ORM
-- SQLite bootstrap database
+- Refer to `docs/40_technical/architecture-overview.md` for stack baseline.
 
 ## 4. References
 

@@ -61,3 +61,8 @@ Do not:
 - [ ] related docs are updated
 - [ ] verification evidence exists
 - [ ] stack coherence kept (React + Flask + SQLAlchemy + SQLite)
+
+## 6. Execution references
+
+- `docs/00_governance/phase-prompts.md`
+- `docs/00_governance/llm-execution-protocol.md`

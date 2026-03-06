@@ -8,6 +8,7 @@ Goal:
 - run work by phases with gates,
 - keep traceability for human + LLM execution,
 - drive delivery from planning to release.
+- keep a core-first structure to minimize context noise.
 
 Fixed stack baseline:
 - frontend: React
@@ -41,6 +42,15 @@ Structure:
 - `50_delivery/`: roadmap, status, gates, backlog, meeting templates.
 - `60_open-questions/`: unresolved questions and tracking.
 - `90_archive/`: historical, not active SoT.
+
+Core-first policy:
+- Core docs are mandatory for execution.
+- Extended docs are optional by project need.
+
+LLM optimization docs:
+- `00_governance/docs-schema.template.md`
+- `00_governance/phase-prompts.template.md`
+- `00_governance/llm-execution-protocol.template.md`
 
 Note:
 - This kit is not a passive template library.

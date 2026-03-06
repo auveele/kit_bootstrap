@@ -12,6 +12,7 @@ Define minimal context bundles by role for IDE + LLM tasks.
 
 - Each prompt includes only 2-4 capsules + 2-4 SoT docs.
 - Avoid oversized and ambiguous context.
+- Prefer core SoT docs before extended docs.
 
 ## 3. Suggested packs
 
